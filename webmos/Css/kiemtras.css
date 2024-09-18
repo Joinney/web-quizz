@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containers {
+    display: flex;
+    margin: 20px;
+}
+.categories-section, .exams-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.categories-section {
+    width: 25%;
+    max-width: 300px;
+}
+.exams-section {
+    width: 75%;
+}
+.categories-section h2, .exams-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.categories-list, .exams-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.category-item, .exam-item {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.category-item:hover, .exam-item:hover {
+    transform: scale(1.05);
+}
+
+.category-item a, .exam-item a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.exams-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+.exams-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.exam-item {
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden; /* Để chứa các phần tử tuyệt đối */
+}
+
+.exam-item img {
+    width: 100%;
+    height: 200px; /* Đặt chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Cắt hình ảnh nếu cần thiết */
+    display: block;
+    margin: 0 auto;
+}
+
+.exam-item .new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.exam-item {
+    position: relative; /* Đặt phần tử chứa có position: relative */
+}
+
+.exam-item .rating {
+  
+    justify-content: center;
+    font-size: 26px;
+    color: gold;
+    display: flex;
+    gap: 2px;
+}
+
+.exam-item .time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.exam-item .exam-details {
+    margin-top: 15px;
+}
+
+.exam-item .exam-details h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.exam-item .exam-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.exam-item .exam-details a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.exam-item .exam-details a.details-button {
+    margin-right: 10px;
+}
+
+.exam-item  a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+

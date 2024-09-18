@@ -1,0 +1,715 @@
+
+ /* danhmuckiemtra */
+ .nav-user-info {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.nav-user-info > a:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+/* danhmuckiemtra */
+.nav-user-info .dropdown {
+  display: none;
+  position: absolute;
+  top: 47%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.nav-user-info:hover .dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-user-info .dropdown {
+  list-style: none;
+}
+
+.nav-user-info .dropdown a {
+  text-decoration: none;
+  color: #333;
+  padding: -1px 0;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.nav-user-info .dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-user-info .dropdown :last-child a {
+  border-bottom: none;
+}
+
+/* Định dạng thanh tìm kiếm */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: right;
+  padding: 11px;
+  background: #007aff;
+  margin-bottom: 13px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-form input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.search-form button:focus {
+  outline: none;
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url('Album/.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 0px;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  background-color: #ff4747;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .left, .top-bar .right {
+  display: flex;
+  align-items: center;
+}
+.top-bar .left a, .top-bar .right a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.top-bar .left a:hover, .top-bar .right a:hover {
+  text-decoration: underline;
+}
+.top-bar .social-icons i {
+  font-size: 18px;
+  margin: 0 5px;
+  color: #000; /* Set the icon color to black */
+}
+.top-bar .social-icons {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+nav {
+  background: #0056b3;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links .logo-item {
+  margin-right: auto; /* Pushes other items to the right */
+  margin-top:10px
+}
+.nav-links li a.logo img {
+  height: 100px; /* Adjust the size of your logo */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+  margin-top: 40px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+nav ul li a.btn {
+  background: #ff4757;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+/*-- Banner chính --*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #007bff;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+  background-image: url('Album/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background: #ff4757;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #e33e4b;
+}
+
+section {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-50%) rotate(15deg);
+  pointer-events: none;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  
+}
+
+.course-grid, .tutorial-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.course-item, .tutorial-item {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 30%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-item:hover, .tutorial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-item h3, .tutorial-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.course-item p, .tutorial-item p {
+  margin-bottom: 1.5rem;
+}
+
+.course-item .btn, .tutorial-item .btn {
+  background: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.course-item .btn:hover, .tutorial-item .btn:hover {
+  background: #0056b3;
+}
+
+.testimonials .testimonial-item {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: 1rem auto;
+  width: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonials .testimonial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials p {
+  font-style: italic;
+}
+
+.testimonials h4 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+footer {
+  background: #ff4747;
+  color: #fff;
+  text-align: center;
+  padding:  5px;
+  
+}
+
+
+
+
+/* Mục tìm kiếm */
+.search {
+  background: #f4f4f4;
+  padding: 4rem 0;
+}
+
+.search h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.search form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+
+.search buttons {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background 0.3s;
+}
+
+.search buttons:hover {
+  background: #0056b3;
+}
+
+
+
+
+
+
+
+
+.course-word {
+background: #4576ff; /* Màu nền cho MOS Word */
+}
+
+.course-excel {
+background: #6dbe69; /* Màu nền cho MOS Excel */
+}
+
+.course-powerpoint {
+background: #ff853b; /* Màu nền cho MOS PowerPoint */
+}
+
+.tutorial-item.word {
+background: #4576ff; /* Màu nền cho Ôn tập Word */
+}
+
+.tutorial-item.excel {
+background: #6dbe69; /* Màu nền cho Ôn tập Excel */
+}
+
+.tutorial-item.powerpoint {
+background: #ff853b; /* Màu nền cho Ôn tập PowerPoint */
+}
+
+
+
+
+
+
+
+/********** LIÊN HỆ - THEO DÕI **********/
+/* General styling for Swiper container */
+.swiper-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px; /* Adjust pagination position */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Color for navigation buttons */
+}
+
+.swiper-pagination-bullets {
+  height: 50px;
+  width: 26px;
+  border-radius: 25px;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+/* Styling for each card */
+.card {
+  position: relative;
+  background: #edebeb;
+  border-radius: 20px;
+  margin: 20px 0;
+  overflow: hidden; /* Prevents content overflow */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: #91aec4;
+  border-radius: 20px 20px 0 0;
+  z-index: 1; /* Behind card content */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 2; /* Above the ::before pseudo-element */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: blanchedalmond;
+  margin-bottom: 15px;
+  z-index: 2; /* Above the ::before pseudo-element */
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.media-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  color: #000;
+  z-index: 3; /* Above all other elements */
+}
+
+.media-icons a {
+  color: black;
+}
+
+.media-icons i {
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.media-icons i:hover {
+  opacity: 1;
+}
+
+.name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #dee114;
+}
+
+.button-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center buttons */
+  margin-top: 20px;
+}
+
+.button-1 button {
+  background: #91aec4;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.button-1 button:hover {
+  background: #6616d0;
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.button-1 .aboutme {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .swiper-slide {
+    flex-direction: column;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .name-profession .name,
+  .name-profession .profession {
+    font-size: 16px;
+  }
+
+  .rating i {
+    font-size: 16px;
+  }
+}
+
+/*---------------------Footer-----------------------------*/
+
+#section__footer {
+  padding: 20px 0;
+  background-color: #007aff;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.block__footer {
+  text-align: center;
+}
+
+.logo-item .logo img {
+  height: 125px; /* Set the height to make the logo smaller */
+  width: auto;  /* Keep the aspect ratio */
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  margin: 0;
+}
+
+.contact-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+/* === cá nhân====*/
+/* Style cho dropdown */
+.nav-user-info {
+  position: relative;
+  display: inline-block;
+}
+
+.user-name {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Ẩn dropdown ban đầu */
+.user-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 5px; /* Khoảng cách giữa tên người dùng và dropdown */
+}
+
+/* Style cho các mục trong dropdown */
+.user-dropdown a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Xóa border từ mục cuối cùng */
+.user-dropdown a:last-child {
+  border-bottom: none;
+}
+
+/* Nổi bật khi hover */
+.user-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hiển thị dropdown khi hover hoặc khi click */
+.nav-user-info:hover .user-dropdown,
+.nav-user-info .user-dropdown.show {
+  display: block;
+}
+

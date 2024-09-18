@@ -1,0 +1,66 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: black;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+a{
+    text-align: center;
+}
+/* Phong cách nút */
+.btn-submit {
+    background-color: #4CAF50; /* Màu nền mặc định */
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Thêm hiệu ứng chuyển đổi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+}
+
+/* Hiệu ứng khi hover (di chuột qua) */
+.btn-submit:hover {
+    background-color: #45a049; /* Thay đổi màu nền khi hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Tăng bóng đổ khi hover */
+    transform: translateY(-2px); /* Nút di chuyển nhẹ lên khi hover */
+}
+
+/* Hiệu ứng khi nhấn vào nút (active) */
+.btn-submit:active {
+    background-color: #388e3c; /* Màu nền tối hơn khi nhấn */
+    transform: translateY(1px); /* Nút di chuyển nhẹ xuống khi nhấn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng đổ giảm đi khi nhấn */
+}

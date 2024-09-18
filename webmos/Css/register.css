@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #333333;
+    --secondary-color: #4fcff6;
+    --text-color: #f2f2f2;
+  }
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(45deg, #81d7f2, #489ff7, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.login-container {
+    background-color: var(--primary-color);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 60%; /* Adjust the width to be more fluid */
+    max-width: 900px; /* Set a max width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap when needed */
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group {
+    flex: 1 1 45%; /* Flexible sizing */
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="username"],
+.form-group input[type="password"],
+.form-group input[type="sdt"],
+.form-group input[type="diachi"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start; /* Align button to the left */
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.menu a.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}

@@ -1,0 +1,165 @@
+/* Kiểu chung */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Màu nền nhẹ hơn để tạo độ tương phản tốt hơn */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #282c34; /* Màu tối hơn cho thanh điều hướng */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #61dafb; /* Hiệu ứng hover màu xanh nhạt */
+    border-radius: 5px;
+}
+
+/* Kiểu tiêu đề */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.5em; /* Kích thước tiêu đề lớn hơn để tạo ấn tượng mạnh */
+    color: #333;
+}
+
+/* Phần chi tiết đề thi */
+.exam-detail {
+    max-width: 900px; /* Kích thước rộng hơn cho phần nội dung để dễ đọc hơn */
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.exam-detail p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Phần câu hỏi */
+.questions-section {
+    margin-top: 30px;
+}
+
+.questions-section h2 {
+    font-size: 1.8em; /* Kích thước tiêu đề lớn hơn */
+    color: #444;
+    border-bottom: 3px solid #61dafb; /* Đường viền màu xanh để nhấn mạnh */
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+}
+
+/* Danh sách câu hỏi */
+.questions-list {
+    list-style: none;
+    padding: 0;
+}
+
+.question-item {
+    padding: 20px;
+    border-bottom: 2px solid #eee; /* Đường viền nhẹ hơn để tạo kiểu sạch hơn */
+    border-radius: 8px; /* Bo tròn các góc cho mục câu hỏi */
+    background-color: #f9f9f9; /* Nền nhẹ cho từng mục câu hỏi */
+    margin-bottom: 15px; /* Khoảng cách giữa các câu hỏi */
+}
+
+.question-item:last-child {
+    border-bottom: none;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.options li {
+    padding: 8px 0;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển tiếp mượt mà */
+}
+
+.options li:nth-child(odd) {
+    background-color: white; /* Tương phản nhẹ cho các tùy chọn */
+}
+
+.options li:nth-child(even) {
+    background-color: white;
+}
+
+.options li:hover {
+    background-color: white;
+    border-radius: 4px;
+    transform: translateY(-2px); /* Hiệu ứng nâng nhẹ khi hover */
+}
+
+/* Thiết kế đáp ứng */
+@media (max-width: 768px) {
+    .exam-detail {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Kích thước tiêu đề điều chỉnh cho màn hình nhỏ hơn */
+    }
+
+    .questions-section h2 {
+        font-size: 1.5em; /* Kích thước tiêu đề điều chỉnh cho màn hình nhỏ hơn */
+    }
+
+    .options li {
+        font-size: 1em;
+    }
+}
+/* Nút chung */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Nút "Quay lại" */
+.btn-back {
+    background-color: #f44336; /* Màu đỏ */
+    color: #fff;
+}
+
+.btn-back:hover {
+    background-color: #c62828; /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Nút "Bắt đầu thi" */
+.btn-start {
+    background-color: #4caf50; /* Màu xanh lá cây */
+    color: #fff;
+}
+
+.btn-start:hover {
+    background-color: #388e3c; /* Màu xanh lá cây đậm hơn khi hover */
+}
+
+/* Phần nút */
+.exam-buttons {
+    text-align: center;
+    margin-top: 20px;
+}

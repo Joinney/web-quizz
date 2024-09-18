@@ -1,0 +1,141 @@
+/* Chat button styling */
+.chat-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #eed809;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    z-index: 1000; /* Đảm bảo nút luôn ở trên cùng */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+/* Hiệu ứng khi di chuột qua nút */
+.chat-button:hover {
+    background-color: #1cf0cc;
+    transform: scale(1.1); /* Phóng to nút khi di chuột qua */
+}
+
+/* Chat container styling (hidden by default) */
+.chat-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 999; /* Đảm bảo container chat nằm dưới nút */
+}
+
+/* Show chat container */
+.chat-container.show {
+    transform: translateY(0);
+}
+
+/* Basic styling for the chat container */
+.chat-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.chat-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the chat box */
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual messages */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e0f7fa;
+    position: relative;
+}
+
+/* Different background colors for user and admin messages */
+.message p {
+    margin: 0;
+}
+
+.message p strong {
+    color: #00796b;
+}
+
+.message p small {
+    display: block;
+    color: #999;
+    font-size: 12px;
+}
+
+.message:nth-child(odd) {
+    background-color: #d4f7fb;
+}
+
+.message:nth-child(even) {
+    background-color: #e0f7fa;
+}
+
+/* Styling for the chat form */
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    /* Make the button full width */
+    padding: 15px; /* Increase padding for a larger button */
+    border: none;
+    border-radius: 8px;
+    background-color: #3efae4;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #acacac;
+}
+
+button:disabled {
+    background-color: #eed809;
+    cursor: not-allowed;
+}
+
+
+

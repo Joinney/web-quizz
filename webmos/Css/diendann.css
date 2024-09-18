@@ -1,0 +1,419 @@
+.post-header {
+    position: relative;
+}
+
+.post-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.more-options {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.action-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.delete-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+
+
+
+/* Container for posts */
+.middle-panel {
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Create post section */
+.post.create {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.post.create .post-top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.post.create .dp img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post.create input[type="text"] {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.post.create .post-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.post.create .action {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.post.create .action i {
+    margin-right: 5px;
+}
+
+/* Individual post styling */
+.post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.post .post-top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.post .dp img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post .post-info {
+    flex: 1;
+}
+
+.post .post-info .name {
+    font-weight: bold;
+}
+
+.post .post-info .time {
+    color: #888;
+    font-size: 12px;
+}
+
+.post .post-content {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.post .post-content img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.post .post-bottom {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.post .post-bottom .action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post .post-bottom .action i {
+    margin-right: 5px;
+}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container cho phần tạo bài viết */
+.post-create {
+    max-width: 900px; /* Mở rộng chiều rộng */
+    margin: 20px auto;
+    padding: 20px; /* Thêm khoảng đệm */
+    background-color: #ffffff; /* Màu nền trắng */
+    border-radius: 10px; /* Góc bo tròn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Phần đầu của form tạo bài viết */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Kích thước ảnh đại diện người dùng */
+.user-avatar {
+    width: 50px; /* Chiều rộng ảnh đại diện */
+    height: 50px; /* Chiều cao ảnh đại diện */
+    border-radius: 50%; /* Hình tròn */
+    margin-right: 15px; /* Khoảng cách giữa ảnh và ô nhập */
+    object-fit: cover; /* Đảm bảo ảnh che phủ khu vực */
+}
+s
+/* Ô nhập tiêu đề bài viết */
+.post-header input[type="text"] {
+    flex: 1; /* Chiếm không gian còn lại */
+    padding: 12px 18px; /* Khoảng đệm bên trong ô nhập */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    border-radius: 25px; /* Góc bo tròn */
+    font-size: 16px; /* Kích thước chữ lớn hơn */
+    background-color: #f0f2f5; /* Màu nền nhẹ */
+}
+
+/* Phần thân của form tạo bài viết */
+.post-body {
+    margin: 15px auto; /* Khoảng cách quanh thân */
+    text-align: center;
+}
+
+/* Nhãn cho việc tải ảnh lên */
+.upload-label {
+    display: inline-block;
+    padding: 12px 16px; /* Khoảng đệm bên trong nhãn */
+    background-color: #f0f2f5; /* Màu nền nhẹ */
+    border-radius: 25px; /* Góc bo tròn */
+    color: #007bff; /* Màu chữ xanh dương */
+    cursor: pointer; /* Con trỏ chuột dạng tay */
+    font-size: 16px; /* Kích thước chữ lớn hơn */
+}
+
+/* Ẩn ô nhập file mặc định */
+.post-body input[type="file"] {
+    display: none; /* Ẩn ô nhập file */
+}
+
+/* Phần chân của form tạo bài viết */
+.post-footer {
+    text-align: right; /* Căn nút sang bên phải */
+}
+
+/* Phong cách nút gửi */
+.post-footer button[type="submit"] {
+    padding: 10px 20px; /* Khoảng đệm bên trong nút */
+    background-color: #007bff; /* Nền xanh dương */
+    border: none; /* Loại bỏ viền */
+    color: white; /* Màu chữ trắng */
+    border-radius: 25px; /* Góc bo tròn */
+    cursor: pointer; /* Con trỏ chuột dạng tay */
+    font-size: 16px; /* Kích thước chữ lớn hơn */
+}
+
+/* Hiệu ứng hover cho nút gửi */
+.post-footer button[type="submit"]:hover {
+    background-color: #0056b3; /* Xanh dương tối hơn khi di chuột */
+}
+
+.post-create {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-create h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.post-create form input[type="text"],
+.post-create form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post-create form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-create form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.posts {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #007bff;
+    object-fit: cover;
+}
+
+
+.post h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.post-image {
+    width: 100%;
+    height: 300px; /* Set a fixed height for the image container */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.post-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-bottom .action-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-bottom .action-button:hover {
+    background-color: #0056b3;
+}
+
+.post-bottom span {
+    font-size: 14px;
+    color: #555;
+}
+
+.comments {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.comment-form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.comment-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.comment-form button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.comment .time {
+    font-size: 12px;
+    color: #777;
+}
+/* Nút xóa */
+.comment form button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

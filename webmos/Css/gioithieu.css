@@ -1,0 +1,114 @@
+/* styles.css */
+
+
+header {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introduction {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 35px;
+}
+.introduction .img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+    height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+    display: block; /* Xóa khoảng trống bên dưới hình ảnh */
+    margin: 0 auto; /* Căn giữa hình ảnh nếu có kích thước cố định */
+}
+
+
+.introduction p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1 1 calc(50% - 20px);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.feature h3 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.3em;
+    background: #f4a300;
+    color: #fff;
+}
+
+.feature p {
+    padding: 15px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #f4a300;
+    color: #333;
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.core-values {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.core-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.core-values li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+

@@ -1,0 +1,236 @@
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.exams-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.exam-item {
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+
+.exam-item img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.exam-item .exam-details {
+    margin-top: 15px;
+}
+
+.exam-item .exam-details h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.exam-item .exam-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.exam-item .exam-details a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.exam-item .exam-details a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.exam-item .new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.exam-item .time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.exam-item .rating {
+    position: absolute;
+    font-size: 26px;
+    color: gold;
+    display: flex;
+    /* gap: 2px; */
+    display: contents;
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+.update-form {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center; /* Canh giữa nội dung bên trong */
+}
+
+.update-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-form label {
+    margin: 10px 0 5px;
+    
+}
+
+.update-form input[type="text"],
+.update-form textarea,
+.update-form input[type="file"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.update-form input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.update-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+.panel {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #61dafb;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+/* Căn giữa phần câu hỏi và làm cho nó nhỏ lại */
+.question-item {
+    max-width: 800px; /* Chiều rộng tối đa cho câu hỏi */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Viền nhẹ để phân tách câu hỏi */
+    border-radius: 5px;
+    background-color: #fff; /* Màu nền trắng cho câu hỏi */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Đổ bóng nhẹ để tạo chiều sâu */
+}
+
+.question-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem; /* Kích thước chữ cho nhãn câu hỏi */
+    color: #444;
+}
+
+.question-item textarea, 
+.question-item input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo padding được tính trong chiều rộng */
+    margin-bottom: 10px;
+    font-size: 0.9rem; /* Kích thước chữ cho input và textarea */
+}
+.update-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 43%;
+    cursor: pointer;
+    
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block; /* Đảm bảo nút hiển thị như một khối nội tuyến để căn giữa */
+}
+
+.update-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .question-item {
+        max-width: 100%; /* Chiều rộng tối đa 100% trên màn hình nhỏ */
+        padding: 10px;
+    }
+
+    .question-item label {
+        font-size: 0.9rem;
+    }
+
+    .question-item textarea, 
+    .question-item input[type="text"] {
+        font-size: 0.8rem;
+    }
+}
+

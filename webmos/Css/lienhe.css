@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.body-lienhe {
+    margin: 54px auto;
+    padding: 20px;
+    width: 95%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lienhe-header {
+    height: auto;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 10px;
+    background: #34e7ff;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: #333;
+}
+
+.lienhe-info {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-left,
+.info-right {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+iframe {
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.guithongtin,
+.thongtinnhom {
+    width: 48%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+}
+
+table input,
+table button,
+table textarea {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+
+table button {
+    cursor: pointer;
+    background: #34e7ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+table button:hover {
+    background: #269e30;
+}
+
+.thongtinnhom table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.thongtinnhom table td,
+th {
+    border: 1px solid #34e7ff;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Alternate row colors */
+.thongtinnhom tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .info-left,
+    .info-right,
+    .guithongtin,
+    .thongtinnhom {
+        width: 100%;
+    }
+    .body-lienhe {
+        margin: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .lienhe-header {
+        height: auto;
+        line-height: normal;
+        padding: 10px;
+        text-align: center;
+    }
+    iframe {
+        height: auto;
+        width: 100%;
+    }
+    table {
+        margin-top: 10px;
+        width: 100%;
+    }
+    table input,
+    table button {
+        width: 100%;
+    }
+}

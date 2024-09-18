@@ -1,0 +1,118 @@
+
+
+.profile-container {
+    width: 50%; /* Đặt chiều rộng của khối chứa thông tin cá nhân là 50% của chiều rộng khung chứa. */
+    margin: 50px auto; /* Căn giữa khối theo chiều ngang và thêm khoảng cách 50px ở trên và dưới. */
+    padding: 20px; /* Thêm khoảng cách 20px ở bên trong khối. */
+    border: 1px solid #ccc; /* Thêm đường viền 1px màu xám nhạt xung quanh khối. */
+    border-radius: 10px; /* Làm tròn các góc của khối với bán kính 10px. */
+    background-color: #f9f9f9; /* Đặt màu nền của khối là màu xám nhạt. */
+}
+
+.profile-header {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử bên trong khối theo hàng ngang. */
+    justify-content: space-between; /* Phân bổ không gian đều giữa các phần tử con, đặt chúng ở hai đầu khối. */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc. */
+    margin-bottom: 20px; /* Thêm khoảng cách 20px ở phía dưới khối tiêu đề. */
+}
+
+.profile-header img {
+    width: 150px; /* Đặt chiều rộng của ảnh đại diện là 150px. */
+    height: 150px; /* Đặt chiều cao của ảnh đại diện là 150px. */
+    border-radius: 50%; /* Làm tròn ảnh thành hình tròn với bán kính 50%. */
+    object-fit: cover; /* Cắt ảnh để phù hợp với kích thước khung mà không thay đổi tỷ lệ khung hình. */
+}
+
+.profile-details {
+    flex-grow: 1; /* Cho phép khối chi tiết chiếm toàn bộ không gian còn lại trong khối tiêu đề. */
+    margin-right: 20px; /* Thêm khoảng cách 20px ở bên phải khối chi tiết. */
+}
+
+.profile-item {
+    margin-bottom: 15px; /* Thêm khoảng cách 15px giữa các mục thông tin cá nhân. */
+}
+
+.profile-item span {
+    font-weight: bold; /* Đặt chữ trong thẻ span thành đậm. */
+}
+
+.profile-buttons {
+    text-align: center; /* Căn giữa các phần tử bên trong khối nút. */
+    margin-top: 20px; /* Thêm khoảng cách 20px ở phía trên khối nút. */
+}
+
+.btns {
+    padding: 10px 20px; /* Thêm khoảng cách 10px ở trên và dưới, 20px ở hai bên của nút. */
+    margin-top: 10px; /* Thêm khoảng cách 10px ở phía trên của nút. */
+    color: #fff; /* Đặt màu chữ của nút là trắng. */
+    background-color: #007bff; /* Đặt màu nền của nút là màu xanh dương. */
+    text-align: center; /* Căn giữa nội dung của nút. */
+    border-radius: 5px; /* Làm tròn các góc của nút với bán kính 5px. */
+    text-decoration: none; /* Bỏ gạch chân của văn bản trong nút. */
+    display: inline-block; /* Đặt nút là khối nội tuyến với các thuộc tính khối. */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Thêm khoảng cách 15px ở phía dưới của nhóm trường. */
+    text-align: left; /* Căn lề trái cho văn bản trong nhóm trường. */
+}
+
+.form-group label {
+    display: block; /* Đặt thẻ label thành khối để các trường input nằm dưới nhau. */
+    margin-bottom: 5px; /* Thêm khoảng cách 5px ở phía dưới của thẻ label. */
+}
+
+.form-group input {
+    width: 100%; /* Đặt chiều rộng của trường input là 100% của khối chứa. */
+    padding: 10px; /* Thêm khoảng cách 10px bên trong trường input. */
+    border: 1px solid #ccc; /* Đặt đường viền của trường input là 1px màu xám nhạt. */
+    border-radius: 5px; /* Làm tròn các góc của trường input với bán kính 5px. */
+}
+
+.modal {
+    display: none;
+    /* Ẩn modal theo mặc định */
+    position: fixed;
+    /* Vị trí cố định để modal phủ toàn bộ màn hình */
+    z-index: 1;
+    /* Đặt chỉ số z cao để modal nằm trên các phần tử khác */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Hiển thị thanh cuộn nếu nội dung quá lớn */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    /* Màu nền đen với độ trong suốt */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    /* Màu nền của nội dung modal */
+    margin: 15% auto;
+    /* Đặt khoảng cách từ trên và căn giữa theo chiều ngang */
+    padding: 20px;
+    border: 1px solid #888;
+    /* Đặt đường viền cho nội dung modal */
+    width: 80%;
+    /* Đặt chiều rộng của nội dung modal */
+}
+
+.close {
+    color: #aaa;
+    /* Màu của nút đóng modal */
+    float: right;
+    /* Đặt vị trí của nút đóng bên phải */
+    font-size: 28px;
+    font-weight: bold;
+    /* Kích thước và độ đậm của chữ nút đóng */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    /* Thay đổi màu và con trỏ khi di chuột qua hoặc khi nút đóng được chọn */
+}

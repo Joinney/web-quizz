@@ -1,0 +1,57 @@
+/* Swiper Container */
+.custom-swiper-container {
+    width: 100%;
+    height: 400px; /* Chỉnh chiều cao của slider */
+    position: relative;
+}
+
+/* Slide CSS */
+.custom-swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0 !important;;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+}
+/* Hình ảnh bên trong slide */
+.custom-swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+/* Tùy chỉnh mũi tên điều hướng */
+.custom-swiper-button-next, .custom-swiper-button-prev {
+    color: #fff; /* Đổi màu mũi tên */
+    font-size: 20px; /* Tăng kích thước mũi tên */
+}
+
+/* Tùy chỉnh pagination (dấu chấm) */
+.custom-swiper-pagination {
+    position: absolute;
+    bottom: 20px; /* Điều chỉnh khoảng cách từ đáy */
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Đảm bảo pagination nằm trên slider */
+}
+
+.custom-swiper-pagination-bullet {
+   
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    margin: 0 5px; /* Khoảng cách giữa các dấu chấm */
+    border-radius: 50%; /* Đảm bảo dấu chấm là hình tròn */
+}
+
+.custom-swiper-pagination-bullet-active {
+    background-color: #007bff; /* Màu của dấu chấm khi đang hoạt động */
+}

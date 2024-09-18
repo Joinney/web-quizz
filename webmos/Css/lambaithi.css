@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the exam container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.panel {
+    background-color: #f1f1f1; /* Light grey background for the panel */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #61dafb; /* Blue border to highlight panel heading */
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.question {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Light border to separate questions */
+}
+
+.question p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+.form-check {
+    margin: 10px 0;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check-label {
+    font-size: 1.1em;
+    color: #555;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4caf50; /* Green button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.btn-warning {
+    background-color: #f44336; /* Red button for finishing the exam */
+}
+
+.btn-warning:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+#divRemainingTime {
+    color: #d9534f; /* Red color for the timer */
+    font-size: 1.2em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .panel-heading {
+        font-size: 1em;
+    }
+
+    .question p {
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,76 @@
+.product-detail-decribe {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.product-detail-describe__detail img {
+    margin-bottom: 20px;
+    border-radius: 50%; /* Ảnh bo tròn hiện đại */
+    border: 2px solid #ddd; /* Viền xung quanh ảnh */
+}
+
+.product-detail-describe__detail h2 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold; /* Tiêu đề đậm để nhấn mạnh */
+}
+
+.product-detail-describe__detail hr {
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid #ddd;
+    width: 80%;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột đều nhau */
+    gap: 20px; /* Khoảng cách giữa các mục */
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.admin-functions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: contents; /* Cho phép các mục sử dụng bố cục lưới từ cha */
+}
+
+.admin-functions li {
+    display: flex;
+    justify-content: center; /* Căn giữa các mục theo chiều ngang */
+}
+
+.admin-functions a {
+    text-decoration: none;
+    color: #fff; /* Màu văn bản */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa nội dung theo cả chiều ngang và dọc */
+    font-size: 16px; /* Kích thước văn bản */
+    transition: color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    padding: 20px; /* Padding để tăng kích thước chiều cao */
+    border-radius: 12px; /* Góc bo tròn */
+    border: 1px solid #007bff; /* Màu viền */
+    background-color: #007bff; /* Màu nền */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bóng để tạo chiều sâu */
+    width: 100%; /* Đảm bảo nút bấm chiếm toàn bộ chiều rộng của ô lưới */
+    height: auto; /* Chiều cao tự động để phù hợp với padding */
+    text-align: center; /* Căn giữa văn bản trong nút bấm */
+    box-sizing: border-box; /* Bao gồm padding và border trong tổng chiều rộng và chiều cao của phần tử */
+}
+
+.admin-functions a:hover {
+    color: #fff;
+    background-color: #0056b3; /* Màu nền khi hover tối hơn */
+    border-color: #0056b3; /* Màu viền khi hover tối hơn */
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bóng mạnh hơn khi hover */
+}
+
+.admin-functions i {
+    margin-right: 10px;
+    font-size: 22px; /* Kích thước biểu tượng lớn hơn một chút */
+}

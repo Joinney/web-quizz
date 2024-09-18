@@ -1,0 +1,86 @@
+/* Đặt cơ bản cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Tiêu đề chính */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Các tiêu đề phụ */
+h2 {
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Các phần form */
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Các phần nhập liệu */
+div {
+    margin-bottom: 15px;
+}
+
+/* Các nhãn cho các trường nhập liệu */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Các trường nhập liệu */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Các trường nhập liệu dạng textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Nút submit */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Nút hover */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Hiển thị thông báo */
+p {
+    text-align: center;
+    color: #d44;
+    font-weight: bold;
+}

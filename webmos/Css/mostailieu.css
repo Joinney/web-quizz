@@ -1,0 +1,68 @@
+.container {
+   
+    margin: 0 auto;
+    padding: 0 0px;
+}
+#blog-posts {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+}
+.post-item {
+    flex: 1;
+    min-width: calc(33.333% - 20px); /* Three items per row with gap */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+.post-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.box-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.box-text {
+    padding: 15px;
+}
+.post-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+.from_the_blog_excerpt {
+    font-size: 14px;
+    color: #555;
+}
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #f9f9f9;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.badge-inner {
+    text-align: center;
+}
+.post-date-day {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.post-date-month {
+    font-size: 12px;
+    color: #777;
+}
+.box {
+    position: relative;
+    overflow: hidden;
+}
